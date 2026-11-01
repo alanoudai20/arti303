@@ -1,3 +1,4 @@
+
 # Virtual environment
 .venv/
 
@@ -16,3 +17,7 @@ kaggle.json
 
 # Jupyter checkpoints
 .ipynb_checkpoints/
+
+# Large data files
+*.zip
+*.tar.gz

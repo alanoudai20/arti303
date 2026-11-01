@@ -1,4 +1,5 @@
 """Tests for src/text_utils.py"""
+
 import sys
 import os
 
@@ -8,10 +9,10 @@ import text_utils
 
 
 def test_clean_name_whitespace():
-    assert text_utils.clean_name("  sara ali  ") == "Sara Ali"
-    assert text_utils.clean_name("sara   ali") == "Sara Ali"
+    assert text_utils.clean_name("  Sara   Ali  ") == "Sara Ali"
+    assert text_utils.clean_name("  Lama    Ahmed  ") == "Lama Ahmed"
 
 
 def test_clean_name_capitalisation():
-    assert text_utils.clean_name("FAISAL ALHARBI") == "Faisal Alharbi"
-    assert text_utils.clean_name("lama alqahtani") == "Lama Alqahtani"
+    assert text_utils.clean_name("SARA ALI") == "Sara Ali"
+    assert text_utils.clean_name("lama ahmed") == "Lama Ahmed"
