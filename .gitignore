@@ -1,0 +1,18 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Logs
+logs/
+*.log
+
+# Credentials
+.env
+.env.*
+kaggle.json
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
